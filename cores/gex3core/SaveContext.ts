@@ -412,7 +412,11 @@ export default class SaveContext{
         return this.ModLoader.emulator.rdramRead8(0x800A54CA);
     }
 
-    set
+    set funky_town(count: number){
+        this.ModLoader.emulator.rdramWrite8(0x800A54CA, count);
+    }
+
+    get funky_town
 //Bonus Worlds that will give you the cheat codes
     get marsupial_madness(): number{
         return this.ModLoader.emulator.rdramRead8(0x800A5698);
