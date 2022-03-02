@@ -1,6 +1,7 @@
 import { IModLoaderAPI } from 'modloader64_api/IModLoaderAPI';
+import { ISaveContext } from './API/ISaveContext';
 
-export default class SaveContext{
+export default class SaveContext implements ISaveContext{
 
     ModLoader: IModLoaderAPI;
 
@@ -352,7 +353,7 @@ export default class SaveContext{
         this.ModLoader.emulator.rdramWrite8(0x800A5563, count);
     }
 
-    get mission_controls_paw_coins(): number{
+    get mission_control_paw_coins(): number{
         return this.ModLoader.emulator.rdramRead16(0x800A5526);
     }
 
@@ -412,11 +413,10 @@ export default class SaveContext{
         return this.ModLoader.emulator.rdramRead8(0x800A54CA);
     }
 
-    set funky_town(count: number){
-        this.ModLoader.emulator.rdramWrite8(0x800A54CA, count);
+    set funky_town(f: number){
+        this.ModLoader.emulator.rdramWrite8(0x800A54CA, f);
     }
 
-    get funky_town
 //Bonus Worlds that will give you the cheat codes
     get marsupial_madness(): number{
         return this.ModLoader.emulator.rdramRead8(0x800A5698);
