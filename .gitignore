@@ -1,0 +1,7 @@
+build/
+dist/
+libs/
+node_modules/
+modloader64-config.json
+.vscode
+*.ld
