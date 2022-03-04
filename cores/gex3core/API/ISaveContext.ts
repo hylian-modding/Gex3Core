@@ -3,6 +3,8 @@
  * Date: 2022-03-02 03:43:11 
 */
 
+import { number_ref } from "modloader64_api/Sylvain/ImGui";
+
 export interface ISaveContext {
     remote_count: number;
     fly_coins: number;
@@ -55,10 +57,13 @@ export interface ISaveContext {
     slappy_valley_bonus_coins: number;
     slappy_valley_paw_coins: number;
     funky_town: number;
+    funky_town_bonus_coins: number;
+    funky_town_paw_coins: number;
     marsupial_madness: number;
     gextreme_sports: number;
     war_and_pieces: number;
     true_gifts: number;
     what_a_crock: number;
     secret_levels: number;
+    boss_battles: number;
 }

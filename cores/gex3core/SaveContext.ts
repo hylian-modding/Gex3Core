@@ -413,8 +413,24 @@ export default class SaveContext implements ISaveContext{
         return this.ModLoader.emulator.rdramRead8(0x800A54CA);
     }
 
-    set funky_town(f: number){
-        this.ModLoader.emulator.rdramWrite8(0x800A54CA, f);
+    set funky_town(count: number){
+        this.ModLoader.emulator.rdramWrite8(0x800A54CA, count);
+    }
+
+    get funky_town_bonus_coins(): number{
+        return this.ModLoader.emulator.rdramRead8(0x800A5569);
+    }
+
+    set funky_town_bonus_coins(count: number){
+        this.ModLoader.emulator.rdramWrite8(0x800A5569, count);
+    }
+
+    get funky_town_paw_coins(): number{
+        return this.ModLoader.emulator.rdramRead16(0x800A552C);
+    }
+
+    set funky_town_paw_coins(count: number){
+        this.ModLoader.emulator.rdramWrite16(0x800A552C, count);
     }
 
 //Bonus Worlds that will give you the cheat codes
@@ -464,6 +480,22 @@ export default class SaveContext implements ISaveContext{
 
     set secret_levels(count: number){
         this.ModLoader.emulator.rdramWrite8(0x800A569B, count);
+    }
+//Boss Battles
+    get boss_battles(): number{
+        return this.ModLoader.emulator.rdramRead8(0x800A54F5);
+    }
+
+    set boss_battles(count: number){
+        this.ModLoader.emulator.rdramWrite8(0x800A54F5, count);
+    }
+
+    get doors(): number{
+        return this.ModLoader.emulator.rdramRead16(0x800A569A);
+    }
+
+    set doors(count: number){
+        this.ModLoader.emulator.rdramWrite16(0x800A569A, count);
     }
 
 }
