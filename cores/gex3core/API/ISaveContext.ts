@@ -47,7 +47,6 @@ export interface ISaveContext {
     super_zeros_paw_coins: number;
     fly_tv_remotes: number;
     mission_control: number;
-    mission_control_tutorial: number;
     mission_control_bonus_coins: number;
     mission_control_paw_coins: number;
     lake_flaccid: number;
@@ -66,4 +65,5 @@ export interface ISaveContext {
     what_a_crock: number;
     secret_levels: number;
     boss_battles: number;
+    doors: number;
 }

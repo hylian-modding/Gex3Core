@@ -1,16 +1,16 @@
 //All addresses adjust the pause screen counter.  When adjusting Paws, it will increase your life.  When adjusting Remotes, it will open levels.  When adjusting Bonus Coins, It will open levels.
 Remote Counter (1 BYTE)
-    (0A54EB) 
+    (0A54EB)
 Fly Coin Counter (1 BYTE)
     (0A54DF)
-Paw Coin Counter (1 BYTE) 
+Paw Coin Counter (1 BYTE)
     (0A54E3)
 Bonus Coin Counter (1 BYTE)
     (0A54E7)
 Life Counter (1 BYTE)
     (0A54D7)
 Health Counter
-    (0A54DB) (1 BYTE) 
+    (0A54DB) (1 BYTE)
 /////////////////////////////////////////////////////////
 
 //All Costumes Related to Mission Bit Fields.  All will fall under (0A5584 and 0A5588) (4 BYTE)
@@ -51,7 +51,7 @@ Bonus Coins (0A5534) (1 BYTE)
     Third Collected first (04)
     First Collected + Third Collected (05)
     Second Collected + Third Collected (06)
-    Three Collected (07)   
+    Three Collected (07)
 
 Paw Collection (0A54F8) (2 BYTES)
     One Collected (0001)
@@ -160,7 +160,7 @@ Paw Collection (0A54FE) (2 BYTES)
     All Collected (03FF)
 
 The Oregon Trail (0A54B4) (1 BYTE)
-LeveL ID: GTOWN2 
+LeveL ID: GTOWN2
     Visit the World Largest Mound of Poop (01)
     Collect 5 of a kind (02)
     Visit the World Largest Mound of Poop + Collect 5 of a kind (03)
@@ -391,7 +391,7 @@ Totally Scrooged + Clueless In Seattle + Holy Moses + War Is Heck + The Oregon T
 CutCheese Island (0020)
 Totally Scrooged + Clueless In Seattle + Holy Moses + War Is Heck + The Oregon Trail + CutCheese Island (002F)
 Et Ty Gecko (0040)
-Totally Scrooged + Clueless In Seattle + Holy Moses + War Is Heck + The Oregon Trail + CutCheese Island + Et Ty Gecko (004F) 
+Totally Scrooged + Clueless In Seattle + Holy Moses + War Is Heck + The Oregon Trail + CutCheese Island + Et Ty Gecko (004F)
 Beanstalker (0080)
 Totally Scrooged + Clueless In Seattle + Holy Moses + War Is Heck + The Oregon Trail + CutCheese Island + Et Ty Gecko + Beanstalker (00FF)
 When Sushi Goes Bad (0100)
@@ -418,7 +418,7 @@ Gextreme Sports (0A569F) (1 BYTE)
 War and Pieces (0A569F) (1 BYTE)
     Level 1 (Found in Lake Flaccid) (01)
     Level 2 (FOund in Slappy Valley) (02)
-    All Completed (03) 
+    All Completed (03)
 True Gifts (0A5698) (1 BYTE)
     Level 1 (Found in Lake Flaccid) (40)
     Level 2 (Found in Slappy Valley) (80)
@@ -463,7 +463,7 @@ All Secret Levels Completed (0F)
 /////////////////////////////////////////////////////////
 Hub Worlds
 
-Mission Control (0A569B) (1 BYTE) 
+Mission Control (0A569B) (1 BYTE)
     Starting Remote (10)
     Tutorial Remote (0A569F) (10)
 

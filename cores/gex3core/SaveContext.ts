@@ -74,11 +74,11 @@ export default class SaveContext implements ISaveContext{
     }
 
     get totally_scrooged_paw_coins(): number{
-        return this.ModLoader.emulator.rdramRead16(0x800A5548);
+        return this.ModLoader.emulator.rdramRead16(0x800A54F8);
     }
 
     set totally_scrooged_paw_coins(count: number){
-        this.ModLoader.emulator.rdramWrite16(0x800A5548, count);
+        this.ModLoader.emulator.rdramWrite16(0x800A54F8, count);
     }
 
     get clueless_in_seattle(): number{
@@ -186,11 +186,11 @@ export default class SaveContext implements ISaveContext{
     }
 
     get cutcheese_island_bonus_coins(): number{
-        return this.ModLoader.emulator.rdramRead8(0x800A54B5);
+        return this.ModLoader.emulator.rdramRead8(0x800A553E);
     }
 
     set cutcheese_island_bonus_coins(count: number){
-        this.ModLoader.emulator.rdramWrite8(0x800A54B5, count);
+        this.ModLoader.emulator.rdramWrite8(0x800A553E, count);
     }
 
     get cutcheese_island_paw_coins(): number{
@@ -330,19 +330,11 @@ export default class SaveContext implements ISaveContext{
     }
 //Hub Worlds
     get mission_control(): number{
-        return this.ModLoader.emulator.rdramRead8(0x800A569B);
+        return this.ModLoader.emulator.rdramRead8(0x800A54C7);
     }
 
     set mission_control(count: number){
-        this.ModLoader.emulator.rdramWrite8(0x800A569B, count);
-    }
-
-    get mission_control_tutorial(): number{
-        return this.ModLoader.emulator.rdramRead8(0x800A569F);
-    }
-
-    set mission_control_tutorial(count: number){
-        this.ModLoader.emulator.rdramWrite8(0x800A569F, count);
+        this.ModLoader.emulator.rdramWrite8(0x800A54C7, count);
     }
 
     get mission_control_bonus_coins(): number{
